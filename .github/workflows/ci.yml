@@ -2,7 +2,7 @@ name: PruebaCI
 on: [push]
 jobs: 
   prueba:
-    name:Prueba de comando
+    name: Prueba de comando
     runs-on: ubuntu-latest
     steps:
       -uses: actions/checkout@v1
