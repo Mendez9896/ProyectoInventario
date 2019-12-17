@@ -1,7 +1,10 @@
-path: ./
-jobs: 10
-cache: build/phplint.cache
-extensions:
-  - php
-exclude:
-  - vendor
+name: Prueba CI
+on: [push]
+jobs:
+  prueba:
+    name: prueba de comando
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -qq -r ./Inventarios-zip/Inventarios.zip ./Inventarios
