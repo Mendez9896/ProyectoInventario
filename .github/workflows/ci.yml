@@ -9,4 +9,4 @@ jobs:
       - run: mkdir Inventarios-zip
       - uses: montudor/action-zip@v0.1.0
         with:
-          args: zip -qq -r ./Inventarios-zip/Inventarios.zip ./Inventarios
+          args: zip -qq -r -vl ./Inventarios-zip/Inventarios.zip ./Inventarios 
